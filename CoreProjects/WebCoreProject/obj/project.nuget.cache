@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wmTJvh63G0cC5hcBQdjChl/bYAyUktbw7IjjDhnanHO/Kx58RNTr05462bj1c4BOWvAqo4pjrqAX/CScgYSP0Q==",
+  "dgSpecHash": "gW9d+dvthf77OuQWoIEH/P5xuFRqu9Frdt5kigPXzF4cxzy6qUAiLuoi7w+t7FMZDBwQFQLw11X383DPeOqcSA==",
   "success": true,
-  "projectFilePath": "E:\\CoreProjects\\WebCoreProject\\WebCoreProject.csproj",
+  "projectFilePath": "E:\\github\\CoreProject\\CoreProjects\\WebCoreProject\\WebCoreProject.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

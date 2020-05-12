@@ -9433,11 +9433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CoreProjects\\WebCoreProject\\WebCoreProject.csproj",
+      "projectUniqueName": "E:\\github\\CoreProject\\CoreProjects\\WebCoreProject\\WebCoreProject.csproj",
       "projectName": "WebCoreProject",
-      "projectPath": "E:\\CoreProjects\\WebCoreProject\\WebCoreProject.csproj",
+      "projectPath": "E:\\github\\CoreProject\\CoreProjects\\WebCoreProject\\WebCoreProject.csproj",
       "packagesPath": "C:\\Users\\qinpeiding\\.nuget\\packages\\",
-      "outputPath": "E:\\CoreProjects\\WebCoreProject\\obj\\",
+      "outputPath": "E:\\github\\CoreProject\\CoreProjects\\WebCoreProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
