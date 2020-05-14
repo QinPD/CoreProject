@@ -98,7 +98,7 @@ namespace WebCoreProject.Controllers
         [HttpGet]
         public ActionResult Login()
         {
-            logger.Info("登陆页面");
+            logger.Info("登陆页");
             return View();
         }
         [AllowAnonymous]
