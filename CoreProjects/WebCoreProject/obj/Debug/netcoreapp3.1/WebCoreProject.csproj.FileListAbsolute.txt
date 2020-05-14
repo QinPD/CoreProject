@@ -649,7 +649,6 @@ E:\github\CoreProject\CoreProjects\WebCoreProject\bin\Debug\netcoreapp3.1\runtim
 E:\github\CoreProject\CoreProjects\WebCoreProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\github\CoreProject\CoreProjects\WebCoreProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\github\CoreProject\CoreProjects\WebCoreProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\WebCoreProject.csprojAssemblyReference.cache
 E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\WebCoreProject.csproj.CoreCompileInputs.cache
 E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\WebCoreProject.RazorAssemblyInfo.cache
 E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\WebCoreProject.RazorAssemblyInfo.cs

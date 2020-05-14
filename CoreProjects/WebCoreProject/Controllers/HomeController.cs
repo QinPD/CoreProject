@@ -20,7 +20,7 @@ namespace WebCoreProject.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-        private Logger logger = LogManager.GetLogger("Logs");
+        private Logger logger = LogManager.GetCurrentClassLogger();
         private readonly ShopTools shopTools = new ShopTools();
         private readonly UserTools userTools = new UserTools();
 
@@ -69,6 +69,11 @@ namespace WebCoreProject.Controllers
         [HttpGet]
         public ActionResult Shop()
         {
+            LogEventInfo log = new LogEventInfo();
+            log.Message = "商品页";
+            log.Level = NLog.LogLevel.Info;
+            log.Properties["LogType"] = "Debug";
+            logger.Log(log);
             var res = shopTools.GetAllShop();
             return View(res);
         }
