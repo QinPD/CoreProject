@@ -678,3 +678,4 @@ E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\static
 E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\WebCoreProject.dll
 E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\WebCoreProject.pdb
 E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\WebCoreProject.genruntimeconfig.cache
+E:\github\CoreProject\CoreProjects\WebCoreProject\obj\Debug\netcoreapp3.1\WebCoreProject.csprojAssemblyReference.cache

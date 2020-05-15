@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NLog;
+using WebCoreProject.Filter;
 using WebCoreProject.Models;
 using WebCoreProject.Tools;
 
@@ -93,7 +94,7 @@ namespace WebCoreProject.Controllers
             shop.States = State;
             return shopTools.AddShop(shop);
         }
-
+        [TestActionFilter]
         [AllowAnonymous]
         [HttpGet]
         public ActionResult Login()
