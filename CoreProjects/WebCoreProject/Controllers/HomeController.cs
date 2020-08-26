@@ -6,15 +6,15 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Repository;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Models.Entity;
 using NLog;
 using WebCoreProject.Filter;
 using WebCoreProject.Models;
-using WebCoreProject.Tools;
 
 namespace WebCoreProject.Controllers
 {
@@ -22,9 +22,14 @@ namespace WebCoreProject.Controllers
     public class HomeController : Controller
     {
         private Logger logger = LogManager.GetCurrentClassLogger();
-        private readonly ShopTools shopTools = new ShopTools();
-        private readonly UserTools userTools = new UserTools();
+        private readonly IRepository<Shop> repositoryShop;
+        private readonly IRepository<User> repositoryUser;
 
+        public HomeController(IRepository<Shop> repositoryShop, IRepository<User> repositoryUser)
+        {
+            this.repositoryShop = repositoryShop;
+            this.repositoryUser = repositoryUser;
+        }
 
         public IActionResult Index()
         {
@@ -44,7 +49,7 @@ namespace WebCoreProject.Controllers
 
         public ActionResult GetUser()
         {
-            var res= userTools.GetAllUser();
+            var res= repositoryUser.All();
             return View(res);
         }
 
@@ -64,7 +69,8 @@ namespace WebCoreProject.Controllers
             u.Password = GetMD5String(Password);
             u.Email = Email;
             u.Mobile = Mobile;
-            return userTools.AddUser(u);
+            repositoryUser.Add(u);
+            return true;
         }
 
         [HttpGet]
@@ -75,7 +81,7 @@ namespace WebCoreProject.Controllers
             log.Level = NLog.LogLevel.Info;
             log.Properties["LogType"] = "Debug";
             logger.Log(log);
-            var res = shopTools.GetAllShop();
+            var res = repositoryShop.All();
             return View(res);
         }
 
@@ -92,7 +98,8 @@ namespace WebCoreProject.Controllers
             shop.ShopName = ShopName;
             shop.ShopPrice = ShopPrice;
             shop.States = State;
-            return shopTools.AddShop(shop);
+            repositoryShop.Add(shop);
+            return true;
         }
         [TestActionFilter]
         [AllowAnonymous]
